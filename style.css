@@ -17,5 +17,5 @@ body {
 
 ul li a {
     text-decoration: none; /* Remove underline */
-    color: inherit; /* Use the color inherited from the parent */
+    color: black; /* Use the color inherited from the parent */
 }
