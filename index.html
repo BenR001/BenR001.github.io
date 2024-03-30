@@ -9,11 +9,40 @@
   </head>
   <body>
 	<script src="index.js"></script>
-    <ul>
-        <li><a href="page1.html">Page 1</a></li>
-        <li><a href="page2.html">Page 2</a></li>
-        <li><a href="page3.html">Page 3</a></li>
-        <li><a href="page4.html">Page 4</a></li>
-    </ul>
+
+    <header class="header">
+        <h1 id="typed-name"></h1>
+    </header>
+
+    <div class="container">
+    <ul class="centered-list">
+        <li><a href="page1.html">PROJECT</a></li>
+        <li><a href="page2.html">PROJECT</a></li>
+        <li><a href="page3.html">PROJECT</a></li>
+        <li><a href="page4.html">PROJECT</a></li>
+    </ul >
+    </div>
+
+    <script>
+        // JavaScript code to simulate typing animation
+        document.addEventListener('DOMContentLoaded', function () {
+            const typedNameElement = document.getElementById('typed-name');
+            const name = 'Benjamin Rosado.';
+            const typingDelay = 90; // Delay between typing each character
+
+            // Function to simulate typing effect
+            function typeWriter(text, index) {
+                if (index < text.length) {
+                    typedNameElement.textContent += text.charAt(index);
+                    setTimeout(function () {
+                        typeWriter(text, index + 1);
+                    }, typingDelay);
+                }
+            }
+
+            // Start the typing animation
+            typeWriter(name, 0);
+        });
+    </script>
   </body>
 </html>

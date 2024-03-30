@@ -7,15 +7,51 @@ ul {
 @font-face {
     font-family: 'MyCustomFont';
     src: url('Urbanist-ExtraBold.ttf') format('woff2'),
-         url('Urbanist-Black.ttf') format('woff');
 }
 
-body {
+@font-face {
+    font-family: 'MyCustomFont2';
+    src: url('Urbanist-ExtraLight.ttf') format('woff');
+}
+
+body,html {
     background-color: #f8f8f8; /* Light gray background color */
     font-family: 'MyCustomFont', sans-serif;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 a {
     color: #000000;
     text-decoration: none !important;
+    /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add drop shadow */
+    font-family: 'MyCustomFont2', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Horizontally center items */
+    align-items: center; /* Vertically center items */
+    height: 100%; /* Take up full height of the viewport */
+}
+
+.centered-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Center list items horizontally */
+}
+
+.centered-list li {
+    margin-bottom: 10px; /* Add some spacing between list items */
+}
+
+.header {
+    position: fixed; /* Fix the header position */
+    top: 20; /* Align to the top of the viewport */
+    left: 20; /* Align to the left of the viewport */
+    padding: 200px; /* Add padding for spacing */
+    font-size: 0.7em; /* Set font size */
 }
