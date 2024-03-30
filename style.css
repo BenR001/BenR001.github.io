@@ -15,7 +15,7 @@ body {
     font-family: 'MyCustomFont', sans-serif;
 }
 
-a {
+ul li a {
     text-decoration: none; /* Remove underline */
     color: inherit; /* Use the color inherited from the parent */
 }
