@@ -27,7 +27,7 @@ a {
     color: #000000;
     text-decoration: none !important;
     /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add drop shadow */
-    font-family: 'MyCustomFont2', sans-serif;
+    font-family: 'MyCustomFont', sans-serif;
 }
 
 .container {
@@ -54,4 +54,15 @@ a {
     left: 20; /* Align to the left of the viewport */
     padding: 200px; /* Add padding for spacing */
     font-size: 0.7em; /* Set font size */
+}
+
+.red { background-color: red; }
+.green { background-color: green; }
+.blue { background-color: blue; }
+.yellow { background-color: rgb(255, 2, 234); }
+
+.color-rectangle {
+    display: inline-block;
+    padding: 10px; /* Adjust padding as needed */
+    color: white; /* Text color */
 }
